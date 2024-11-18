@@ -1,0 +1,165 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(to right, #1e3c72, #2a5298);
+    color: #fff;
+    margin: 0;
+    overflow-x: hidden;
+  }
+  
+  /* Header */
+  header {
+    text-align: center;
+    padding: 20px 10px;
+    background: rgba(0, 0, 0, 0.7);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+  }
+  
+  header h1 {
+    font-size: 2rem;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+  }
+  
+  nav ul {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    list-style: none;
+  }
+  
+  nav ul li {
+    margin: 0;
+  }
+  
+  nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 500;
+    padding: 10px 15px;
+    border-radius: 20px;
+    transition: background 0.3s;
+  }
+  
+  nav ul li a:hover {
+    background: rgba(255, 255, 255, 0.2);
+  }
+  
+  /* Section Titles */
+  .wallpaper-category h2 {
+    font-size: 1.8rem;
+    margin: 30px 0 20px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+  }
+  
+  /* Wallpaper Grid */
+  .wallpaper-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Adjust column width for better responsiveness */
+    gap: 15px; /* Consistent spacing between items */
+    padding: 20px; /* Adds space around the grid */
+  }
+  
+  .wallpaper-card {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .wallpaper-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.6);
+  }
+  
+  .wallpaper-card img {
+    width: 100%;
+    height: auto;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.2);
+  }
+  
+  /* Download Button */
+  .download-btn {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    background: #4caf50;
+    color: #fff;
+    text-transform: uppercase;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 0 0 15px 15px;
+    transition: background 0.3s;
+  }
+  
+  .download-btn:hover {
+    background: #45a049;
+  }
+  
+  /* Footer */
+  footer {
+    text-align: center;
+    padding: 15px;
+    background: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    font-size: 0.9rem;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    header h1 {
+      font-size: 1.5rem;
+    }
+  
+    nav ul {
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+  
+    nav ul li a {
+      font-size: 0.9rem;
+    }
+  
+    .wallpaper-category h2 {
+      font-size: 1.5rem;
+    }
+  
+    .download-btn {
+      font-size: 0.9rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    header h1 {
+      font-size: 1.2rem;
+    }
+  
+    nav ul {
+      flex-direction: column;
+      gap: 8px;
+    }
+  
+    nav ul li a {
+      font-size: 0.8rem;
+      padding: 8px 10px;
+    }
+  
+    .wallpaper-grid {
+      gap: 15px;
+    }
+  
+    .download-btn {
+      font-size: 0.8rem;
+    }
+  }
+  

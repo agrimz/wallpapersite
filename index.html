@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wallpaper Website</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Wallpaper Hub</h1>
+    <nav>
+      <ul>
+        <li><a href="#nature">Nature</a></li>
+        <li><a href="#abstract">Abstract</a></li>
+        <li><a href="#technology">Technology</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="nature" class="wallpaper-category">
+      <h2>Nature Wallpapers</h2>
+      <div class="wallpaper-grid">
+        <div class="wallpaper-card">
+          <img src="wallpaper2.png" alt="Nature Wallpaper">
+          <button class="download-btn" onclick="downloadWallpaper('wallpaper1.png')">Download</button>
+        </div>
+        <div class="wallpaper-card">
+          <img src="wallpaper5.png" alt="Nature Wallpaper">
+          <button class="download-btn" onclick="downloadWallpaper('wallpaper2.png')">Download</button>
+        </div>
+        <div class="wallpaper-card">
+          <img src="wallpaper7.png" alt="Nature Wallpaper">
+          <button class="download-btn" onclick="downloadWallpaper('wallpaper2.png')">Download</button>
+        </div>
+        
+        
+      </div>
+      
+      </div>
+    </section>
+
+    <section id="abstract" class="wallpaper-category">
+      <h2>Abstract Wallpapers</h2>
+      <div class="wallpaper-grid">
+        <div class="wallpaper-card">
+          <img src="wallpaper1.png" alt="Abstract Wallpaper">
+          <button class="download-btn" onclick="downloadWallpaper('wallpaper2.png')">Download</button>
+        </div>
+        <div class="wallpaper-card">
+          <img src="wallpaper3.png" alt="Abstract Wallpaper">
+          <button class="download-btn" onclick="downloadWallpaper('wallpaper1.png')">Download</button>
+        </div>
+        <div class="wallpaper-card">
+          <img src="wallpaper6.png" alt="Abstract Wallpaper">
+          <button class="download-btn" onclick="downloadWallpaper('wallpaper1.png')">Download</button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2024 Wallpaper Hub. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
